@@ -1,7 +1,287 @@
-<!DOCTYPE html>
-<html>
+<html><head><base href="https://gamedesigner-portfolio.com/projects"><title>Alex Johnson - Game Design Projects</title>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+#counter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom-left-radius: 10px;
+    z-index: 1000;
+}
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #4CAF50;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.project-header {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.project-header h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.project-content {
+    padding: 30px;
+}
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.project-details > div {
+    flex: 1;
+    margin-right: 20px;
+}
+.project-details > div:last-child {
+    margin-right: 0;
+}
+.project-details h3 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+.project-details ul {
+    padding-left: 20px;
+}
+.project-links {
+    margin-top: 20px;
+}
+.project-links a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+.project-links a:hover {
+    background-color: #45a049;
+}
+.hidden-animal {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 999;
+}
+.hidden-animal:hover {
+    transform: scale(1.2);
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<div id="counter">Animals found: <span id="count">0</span>/10</div>
+
+<nav>
+    <a href="https://gamedesigner-portfolio.com/">Home</a>
+    <a href="https://gamedesigner-portfolio.com/cv">CV</a>
+    <a href="https://gamedesigner-portfolio.com/projects">Projects</a>
+    <a href="https://gamedesigner-portfolio.com/gallery">Gallery</a>
+    <a href="https://gamedesigner-portfolio.com/contact">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>My Game Design Projects</h1>
+
+    <div id="pixel-paradise" class="project">
+        <div class="project-header" style="background-image: url('pixel_paradise_banner.jpg');">
+            <h2>Pixel Paradise</h2>
+        </div>
+        <div class="project-content">
+            <p>Pixel Paradise is a charming retro-style farming simulation game with RPG elements. Players build and manage their own island paradise while interacting with quirky characters and uncovering the island's mysteries.</p>
+            <div class="project-details">
+                <div>
+                    <h3>My Role</h3>
+                    <ul>
+                        <li>Lead Game Designer</li>
+                        <li>Narrative Designer</li>
+                        <li>Pixel Artist</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Dynamic farming system with seasonal changes</li>
+                        <li>Character relationship and gifting mechanics</li>
+                        <li>Dungeon exploration with puzzle-solving elements</li>
+                        <li>Mini-games for fishing, mining, and crafting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>C#</li>
+                        <li>Aseprite for pixel art</li>
+                        <li>FMOD for audio</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://pixelparadise.com" target="_blank">Visit Game Website</a>
+                <a href="https://store.steampowered.com/app/pixelparadise" target="_blank">Steam Page</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="chrono-clash" class="project">
+        <div class="project-header" style="background-image: url('chrono_clash_banner.jpg');">
+            <h2>Chrono Clash</h2>
+        </div>
+        <div class="project-content">
+            <p>Chrono Clash is a fast-paced multiplayer arena battler where players control time-traveling warriors. Each character has unique abilities that manipulate time, creating dynamic and unpredictable battles.</p>
+            <div class="project-details">
+                <div>
+                    <h3>My Role</h3>
+                    <ul>
+                        <li>Game Mechanic Designer</li>
+                        <li>Character Designer</li>
+                        <li>Level Designer</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Time manipulation mechanics (slow, rewind, fast-forward)</li>
+                        <li>8 unique characters with distinct playstyles</li>
+                        <li>Dynamic arenas with time-based hazards</li>
+                        <li>Competitive ranked mode and casual play</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Unreal Engine 4</li>
+                        <li>C++</li>
+                        <li>Blender for 3D modeling</li>
+                        <li>Photoshop for textures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://chronoclash.com" target="_blank">Visit Game Website</a>
+                <a href="https://store.steampowered.com/app/chronoclash" target="_blank">Steam Page</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="eco-quest" class="project">
+        <div class="project-header" style="background-image: url('eco_quest_banner.jpg');">
+            <h2>Eco Quest</h2>
+        </div>
+        <div class="project-content">
+            <p>Eco Quest is an educational adventure game that teaches players about environmental conservation. Players explore diverse ecosystems, solve puzzles, and make choices that impact the virtual world's ecology.</p>
+            <div class="project-details">
+                <div>
+                    <h3>My Role</h3>
+                    <ul>
+                        <li>Educational Content Designer</li>
+                        <li>Puzzle Designer</li>
+                        <li>UI/UX Designer</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>5 distinct ecosystems to explore and restore</li>
+                        <li>Choice-based narrative with multiple endings</li>
+                        <li>Mini-games teaching ecological concepts</li>
+                        <li>Collaborative multiplayer missions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>C#</li>
+                        <li>Adobe Illustrator for 2D art</li>
+                        <li>Twine for narrative branching</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://ecoquest.edu" target="_blank">Visit Game Website</a>
+                <a href="https://apps.apple.com/us/app/eco-quest" target="_blank">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ecoquest" target="_blank">Google Play</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<img class="hidden-animal" src="hedgehog.png" alt="Pixel art hedgehog" style="top: 450px; left: 30px;" width="40" height="40">
+<img class="hidden-animal" src="raccoon.png" alt="Pixel art raccoon" style="bottom: 200px; right: 50px;" width="40" height="40">
+
+<script>
+let animalCount = parseInt(localStorage.getItem('animalCount') || '0');
+const totalAnimals = 10;
+
+function updateCounter() {
+    document.getElementById('count').textContent = animalCount;
+    localStorage.setItem('animalCount', animalCount.toString());
+    if (animalCount === totalAnimals) {
+        alert('Congratulations! You`ve found all the animals! Check the home page for a special celebration!');
+    }
+}
+
+function hideAnimal(animal) {
+    animal.style.display = 'none';
+    animalCount++;
+    updateCounter();
+}
+
+document.querySelectorAll('.hidden-animal').forEach(animal => {
+    animal.addEventListener('click', () => hideAnimal(animal));
+});
+
+updateCounter();
+</script>
+</body></html>
