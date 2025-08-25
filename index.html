@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="module" src="js/main.js" defer></script>
+
 </head>
 <body>
-<div id="counter">Animals found: <span id="count">0</span>/10</div>
+<div id="counter">Kitty Counter: <span id="count">0</span>/10</div>
 
 <nav>
     <a href="https://gamedesigner-portfolio.com/">Home</a>
@@ -139,28 +141,4 @@
 <img class="hidden-animal" src="hedgehog.png" alt="Pixel art hedgehog" style="top: 450px; left: 30px;" width="40" height="40">
 <img class="hidden-animal" src="raccoon.png" alt="Pixel art raccoon" style="bottom: 200px; right: 50px;" width="40" height="40">
 
-<script>
-let animalCount = parseInt(localStorage.getItem('animalCount') || '0');
-const totalAnimals = 10;
-
-function updateCounter() {
-    document.getElementById('count').textContent = animalCount;
-    localStorage.setItem('animalCount', animalCount.toString());
-    if (animalCount === totalAnimals) {
-        alert('Congratulations! You`ve found all the animals! Check the home page for a special celebration!');
-    }
-}
-
-function hideAnimal(animal) {
-    animal.style.display = 'none';
-    animalCount++;
-    updateCounter();
-}
-
-document.querySelectorAll('.hidden-animal').forEach(animal => {
-    animal.addEventListener('click', () => hideAnimal(animal));
-});
-
-updateCounter();
-</script>
 </body></html>
