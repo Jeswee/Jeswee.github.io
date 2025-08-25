@@ -5,7 +5,7 @@ function updateCounter() {
     document.getElementById('count').textContent = animalCount;
     localStorage.setItem('animalCount', animalCount.toString());
     if (animalCount === totalAnimals) {
-        alert('Congratulations! You`ve found all the animals! Check the home page for a special celebration!');
+        alert('Congratulations! You`ve found all kitties!');
     }
 }
 
