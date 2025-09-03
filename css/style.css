@@ -1,3 +1,6 @@
+
+
+/**  old Styles
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
@@ -30,8 +33,10 @@ nav a {
 }
 nav a:hover {
     color: #4CAF50;
-}
-.container {
+} **/
+
+/** PROJECT STYLES
+    .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -68,41 +73,13 @@ h1 {
 .project-content {
     padding: 30px;
 }
-.project-details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.project-details > div {
-    flex: 1;
-    margin-right: 20px;
-}
-.project-details > div:last-child {
-    margin-right: 0;
-}
-.project-details h3 {
-    color: #4CAF50;
-    margin-top: 0;
-}
-.project-details ul {
-    padding-left: 20px;
-}
-.project-links {
-    margin-top: 20px;
-}
-.project-links a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
+
 .project-links a:hover {
     background-color: #45a049;
-}
+} 
+    **/
+
+/**
 .hidden-cat {
     width: 40px;
     height: 40px;
@@ -113,4 +90,6 @@ h1 {
 }
 .hidden-cat:hover {
     transform: scale(1.2);
-}
+} **/
+
+
