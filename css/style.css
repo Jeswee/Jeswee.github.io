@@ -1,4 +1,33 @@
+.social-media-links{
+    margin:0;
+    padding:0;
+    background-color: gray;
+}
 
+.icon{
+    width: 20%;
+}
+
+.main{
+    margin:auto;
+}
+
+p{
+    text-align: center;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.kitty-counter{
+    background-color: aqua;
+}
+
+.site-header{
+    background-image:url(/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg);
+    background-size: cover;
+}
 
 /**  old Styles
 body {
