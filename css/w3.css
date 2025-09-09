@@ -7,7 +7,9 @@
     min-height: 100svh;
     width: 100%;
 }
-
+.hero-box {         /*so that the text is in the middle of the bgimg*/
+    height: 100%; 
+}
 
 
 
