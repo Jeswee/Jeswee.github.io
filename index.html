@@ -14,20 +14,19 @@
 
     <!-- Nav Bar -->
     <div class="w3-top">
-        <div class="w3-bar w3-wide w3-padding w3-card"> <!--if not seethrough then use w3-black-->
+        <div class="w3-bar w3-wide w3-padding w3-card w3-white"> <!--if seethrough then delete w3-white-->
             <a class="w3-bar-item w3-left">JESSICA WIECHA</a>
-            <div>
-                <a href="index.html" class="w3-bar-item w3-button w3-right">Portfolio</a>
-                <a href="resume.html" class="w3-bar-item w3-button w3-right">Resume</a>  
-            </div>
+            <nav>
+                <a href="#aboutme" class="w3-bar-item w3-button w3-right">About me</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-right">Portfolio</a>  
+                <a href="#contact" class="w3-bar-item w3-button w3-right">Contact</a> 
+            </nav>
             
         </div>
     </div>
-    <!-- maybe better: Nav Bar only on top and not in front of Picture???-->
 
-    <!--Header unabhänig von der Nav-Bar (ist ein eigenes Div)-->
+    <!--Header unabhänig von der Nav-Bar-->
     <header class="bgimg" id="home">
-       <!-- <img class="w3-image" src="/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg" alt="concept art" width="1500" height="800"> -->
         <div class="hero">
             <h1 class="w3-xxlarge">JESSICA WIECHA</h1>
             <h2 class="w3-xlarge">GAME DESIGNER</h2>
@@ -45,15 +44,82 @@
         </div>
     </header>
 
+    <main>
+
+        <!-- Kitty Counter -->
+
+        <section id="kitty-counter">
+        <div>
+            <p>Kitty-counter explanation</p>
+        </div>
+        </section>
+
+        <!-- ABOUT ME -->
+         
+        <section id="aboutme">
+
+            <header>
+                <h2>About me</h2>
+            </header>
+
+            <div class="content">
+                <p>learn more about me</p>
+                <p>education</p>
+                <p>programs</p>
+                <p>languages</p>
+            </div>
+
+        </section>
+
+        <!-- ALL PROJECTS etc -->
+
+        <section id="portfolio">
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+
+            <!-- PROJECT #1 -->
+            <section class="project">
+
+                <!-- project header: title & meta information -->
+                <header class="project-header">
+                    <h3>Dolly's House</h3>
+                </header>
+
+                <div class="content">
+                    <!-- short description -->
+                    <article>
+                        <p>all about the game & my role</p>
+                        <p>my main responsibilities: animation, character clothing, level/ game design, physics-based movement, programming</p>
+                    </article>
+                    <!-- pics & vids -->
+                    <!-- social media/ github links etc -->
+                </div>
+
+            </section>
+
+            <!-- PROJECT #2 -->
+            <section class="project">
+                <header>
+                    <h3>Project Title</h3>
+                </header>
+
+                <div class="content"></div>
+
+            </section>
+            
+        </section>
+
+
+    </main>
+
+    <!--
     <main class="w3-content w3-pading" style="max-width:1500px">
         <div>
             <div class="kitty-counter">
                 <p>Kitty Counter:</p>
                 <p id="counter">0</p>
-
-                <img src="/pictures/websiteStyle/cat-food-graphic-clipart-design-free-png.webp" class="icon">
-            </div>
-
+                <img src="/pictures/websiteStyle/cat-food-graphic-clipart-design-free-png.webp" class="icon"> 
         </div>
 
         <div class="project-display">
@@ -62,13 +128,19 @@
             <div class="single-project">
                 Dolly's House
             </div>
-        </div>
-            
-        
+        </div>  
     </main>
+    -->
 
-    <footer>
-        <a>Contact Information</a>
+
+    <footer id="contact">
+        <p>
+            Thank you for visiting! <br>
+            You found x out of x cats!
+        </p>
+        <p> 
+            contact me via xy
+        </p>
     </footer>
 
 </body>
