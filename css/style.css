@@ -2,7 +2,15 @@
 :root{
     /* VARIABLES --> can be used like var(--bg)*/
     --bg: #ffffff;
+    --bg-2: #737373;
     --text:  #000;
+    
+    /* Color Theme Swatches in Hex from Adobe Color Grim Reaper Picture*/
+    --c-darkest: #07070D;
+    --c-dark: #182526; 
+    --c-medium: #385359;
+    --c-light: #496B73;
+    --c-lightest: #A3BCBF;
 }
 
 html, body{
@@ -36,11 +44,52 @@ section[id] { scroll-margin-top: 60px; }
     max-width: 80ch;
 }
 
-main {
+.kitty-counter{
+    background: var(--bg-2);
+
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.aboutme{
+    background: #939393;
+}
+
+.aboutme-col{
+    display: flex;
+    gap: 16px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.icons img{
+    width: 3rem;
+}
+
+.icons{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content{
+    display:flex;
+    text-align: left;
+}
+
+.portfolio {
   max-width: 1200px;
   margin: 0 auto; /* zentriert in der Mitte */
 
   padding: 24px 16px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 /* PROJECT GALLERY */
