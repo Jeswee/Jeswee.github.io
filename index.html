@@ -7,6 +7,8 @@
     <title>Jessica Wiecha - Portfolio</title>
 
     <link rel="stylesheet" href="css/w3.css">
+    <!-- 2nd style sheet link here so that it has priority & overwrites the w3.css -->
+    <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js" defer></script>
 </head>
 
@@ -74,6 +76,7 @@
         <!-- ALL PROJECTS etc -->
 
         <section id="portfolio">
+
             <header>
                 <h2>Portfolio</h2>
             </header>
@@ -84,27 +87,55 @@
                 <!-- project header: title & meta information -->
                 <header class="project-header">
                     <h3>Dolly's House</h3>
+                    <img src="/pictures/DollysHouse/museumLevel.png" alt="Dolly's House Screenshot"> 
                 </header>
 
-                <div class="content">
-                    <!-- short description -->
-                    <article>
-                        <p>all about the game & my role</p>
-                        <p>my main responsibilities: animation, character clothing, level/ game design, physics-based movement, programming</p>
-                    </article>
-                    <!-- pics & vids -->
-                    <!-- social media/ github links etc -->
-                </div>
+                <!-- Aufklappbar -->
+                <details>
+
+                    <summary>
+                        show more
+                    </summary>
+
+                    <div class="content">
+                        <!-- short description -->
+                        <article>
+                            <p>all about the game & my role</p>
+                            <p>my main responsibilities: animation, character clothing, level/ game design, physics-based movement, programming</p>
+                        </article>
+                        <!-- pics & vids -->
+                        <!-- social media/ github links etc -->
+                    </div>
+                    
+                </details>
 
             </section>
+
 
             <!-- PROJECT #2 -->
             <section class="project">
                 <header>
                     <h3>Project Title</h3>
+                    <img scr="" alt="">
                 </header>
 
-                <div class="content"></div>
+                <!-- Aufklappbar -->
+                <details>
+
+                    <summary>
+                        show more
+                    </summary>
+
+                    <div class="content">
+                        <!-- short description -->
+                        <article>
+                            <p>all about the game & my role</p>
+                        </article>
+                        <!-- pics & vids -->
+                        <!-- social media/ github links etc -->
+                    </div>
+                    
+                </details>
 
             </section>
             

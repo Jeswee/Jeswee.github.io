@@ -1,31 +1,4 @@
-/*own code*/
-.bgimg{
-    background-image: url("/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    min-height: 100svh;
-    width: 100%;
-
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-}
-
-.hero{
-    max-width: 80ch;
-}
-
-
-/*missing Styles:
-.portfolio (all projects etc)
-.project (each own project section)
-.project-header (name and meta info of each project)
-.content
-*/
 
 
 

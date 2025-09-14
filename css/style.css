@@ -1,124 +1,46 @@
-.social-media-links{
-    margin:0;
-    padding:0;
-    background-color: gray;
+/*own code*/
+:root{
+    /* VARIABLES --> can be used like var(--bg)*/
+    --bg: #fff;
+    --text:  #000;
 }
 
-.icon{
-    width: 20%;
-}
-
-.main{
-    margin:auto;
-}
-
-p{
-    text-align: center;
-}
-
-h1, h2, h3{
-    text-align: center;
-}
-
-.kitty-counter{
-    background-color: aqua;
-}
-
-.site-header{
-    background-image:url(/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg);
-    background-size: cover;
-}
-
-/**  old Styles
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-#counter {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    border-bottom-left-radius: 10px;
-    z-index: 1000;
-}
-nav {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-nav a:hover {
-    color: #4CAF50;
-} **/
-
-/** PROJECT STYLES
-    .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-h1 {
-    color: #4CAF50;
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-.project {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    margin-bottom: 40px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-.project-header {
-    background-size: cover;
+.bgimg{
+    background-image: url("/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg");
     background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-.project-header h2 {
-    font-size: 2.5em;
-    margin: 0;
-}
-.project-content {
-    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100svh;
+    width: 100%;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
-.project-links a:hover {
-    background-color: #45a049;
-} 
-    **/
-
-/**
-.hidden-cat {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    transition: transform 0.3s;
-    z-index: 999;
+.hero{
+    max-width: 80ch;
 }
-.hidden-cat:hover {
-    transform: scale(1.2);
-} **/
 
+main {
+  max-width: 1200px;
+  margin: 0 auto; /* zentriert in der Mitte */
+}
+
+/* PROJECT GALLERY */
+.project { margin: 2rem 0; }
+.project img { display:block; width:100%; height:auto; }
+.project details { margin-top: .5rem; }
+.project summary { cursor: pointer; }
+
+
+/*missing Styles:
+.portfolio (all projects etc)
+.project (each own project section)
+.project-header (name and meta info of each project)
+.content
+*/
 
