@@ -5,7 +5,7 @@
     --bg-2: #737373;
     --text:  #000;
     
-    /* Color Theme Swatches in Hex from Adobe Color Grim Reaper Picture*/
+    /* Color Theme Swatches Adobe Color Grim Reaper Pic*/
     --c-darkest: #07070D;
     --c-dark: #182526; 
     --c-medium: #385359;
@@ -13,17 +13,57 @@
     --c-lightest: #A3BCBF;
 }
 
+/*
 html, body{
     background:var(--bg);
-    
 }
+*/
+
 
 /* FONT & TEXT*/
 /* ... */
 
-/* so that the sticky nav won't cover the caption etc */
+.f-center{
+    text-align: center;
+}
+
+.f-left{
+    text-align: left;
+}
+
+.small-text{
+    max-width: 60ch;
+}
+
+
+/* FLEXBOX */
+.flex-col{
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PADDING */
+.padding{
+    padding: 24px 16px;;
+}
+
+
+/* so that sticky nav won't cover the caption etc */
 section[id] { scroll-margin-top: 60px; }
 
+
+/* HERO/ OPENER*/
 .bgimg{
     background-image: url("/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg");
     background-position: center;
@@ -44,13 +84,15 @@ section[id] { scroll-margin-top: 60px; }
     max-width: 80ch;
 }
 
+
+/* KITTY COUNTER*/
+
 .kitty-counter{
     background: var(--bg-2);
 
     display:flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
 
     text-align: center;
 }
@@ -59,16 +101,21 @@ section[id] { scroll-margin-top: 60px; }
     background: #939393;
 }
 
-.aboutme-col{
+.info-text{
     display: flex;
-    gap: 16px;
-    max-width: 1800px;
-    margin: 0 auto;
+    text-align: left;
+    flex-flow: row;
+    text-align: justify;
 }
 
+
+
+
+
 .icons img{
-    width: 3rem;
+    width: 4rem;
 }
+
 
 .icons{
     display: flex;
@@ -76,10 +123,6 @@ section[id] { scroll-margin-top: 60px; }
     align-items: center;
 }
 
-.content{
-    display:flex;
-    text-align: left;
-}
 
 .portfolio {
   max-width: 1200px;
@@ -94,8 +137,9 @@ section[id] { scroll-margin-top: 60px; }
 }
 
 /* PROJECT GALLERY */
-.project { margin: 2rem 0; }
+.project { margin: 2rem 0; background: #385359;}
 .project-title-img { display:block; width:100%; height:auto; }
+.project-img{display: flex; width: 90%; height: auto; align-items: center;}
 .project details { margin-top: .5rem; }
 .project summary { cursor: pointer; }
 
