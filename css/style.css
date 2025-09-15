@@ -83,13 +83,14 @@ section[id] { scroll-margin-top: 60px; }
 
 .portfolio {
   max-width: 1200px;
-  margin: 0 auto; /* zentriert in der Mitte */
+  margin: 0 auto; /* centered */
 
   padding: 24px 16px;
 
   display: flex;
   flex-flow: column;
   align-items: center;
+  
 }
 
 /* PROJECT GALLERY */
