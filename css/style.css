@@ -147,6 +147,29 @@ section[id] { scroll-margin-top: 60px; }
 
 
 
+/* ======= SHOW-MORE POINTER =======*/
+
+.project summary{
+  display:flex; align-items:center; gap:.5rem;
+  cursor:pointer; list-style:none; /* Firefox */
+  padding:.5rem 0;
+}
+
+/* Standard-Marker ausblenden (Chrome/Safari) */
+.project summary::-webkit-details-marker{ display:none; }
+
+/* arrow */
+.project .chevron{
+  width:1em; height:1em; flex:0 0 auto;
+  transition: transform .2s ease;
+}
+
+/* turn, when opened */
+.project details[open] .chevron{ transform: rotate(180deg); }
+
+/* Text "Show more/less" */
+.project summary .label::after{ content:"Show more"; }
+.project details[open] summary .label::after{ content:"Show less"; }
 
 
 
