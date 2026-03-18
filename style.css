@@ -1,0 +1,159 @@
+/*own code*/
+:root{
+    /* VARIABLES --> can be used like var(--bg)*/
+    --bg: #ffffff;
+    --bg-2: #737373;
+    --text:  #000;
+    
+    /* Color Theme Swatches Adobe Color Grim Reaper Pic*/
+    --c-darkest: #07070D;
+    --c-dark: #182526; 
+    --c-medium: #385359;
+    --c-light: #496B73;
+    --c-lightest: #A3BCBF;
+}
+
+/*
+html, body{
+    background:var(--bg);
+}
+*/
+
+
+/* FONT & TEXT*/
+/* ... */
+
+.f-center{
+    text-align: center;
+}
+
+.f-left{
+    text-align: left;
+}
+
+.small-text{
+    max-width: 60ch;
+}
+
+
+/* FLEXBOX */
+.flex-col{
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PADDING */
+.padding{
+    padding: 24px 16px;;
+}
+
+
+/* so that sticky nav won't cover the caption etc */
+section[id] { scroll-margin-top: 60px; }
+
+
+/* HERO/ OPENER*/
+.bgimg{
+    background-image: url("/pictures/placeholder/placeholder-concept-illustration_839035-598189.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100svh;
+    width: 100%;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero{
+    max-width: 80ch;
+}
+
+
+/* KITTY COUNTER*/
+
+.kitty-counter{
+    background: var(--bg-2);
+
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.aboutme{
+    background: #939393;
+}
+
+.info-text{
+    display: flex;
+    text-align: left;
+    flex-flow: row;
+    text-align: justify;
+}
+
+
+
+
+
+.icons img{
+    width: 4rem;
+}
+
+
+.icons{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto; /* centered */
+
+  padding: 24px 16px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+/* PROJECT GALLERY */
+.project { margin: 2rem 0; background: #385359;}
+.project-title-img { display:block; width:100%; height:auto; }
+.project-img{display: flex; width: 90%; height: auto; align-items: center;}
+.project details { margin-top: .5rem; }
+.project summary { cursor: pointer; }
+
+
+
+
+
+
+
+
+/*missing Styles:
+.portfolio (all projects etc)
+.project (each own project section)
+.project-header (name and meta info of each project)
+.content
+*/
+
