@@ -1,5 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+body { 
+    margin: 0; 
+    background: radial-gradient(circle, #242424 0%, #000000 100%); 
+    overflow: hidden; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    color: white;
 }
+
+/* The large "Sumimasen" behind the character */
+#background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw; /* Responsive size */
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.03); /* Very subtle grey */
+    white-space: nowrap;
+    z-index: 0; /* Behind everything */
+    user-select: none;
+}
+
+/* The foreground maintenance message */
+#overlay { 
+    position: absolute; 
+    width: 100%;
+    bottom: 15%; /* Positioned below the character's waist */
+    text-align: center;
+    pointer-events: none; 
+    z-index: 10;
+}
+
+h1 { font-size: 2.5rem; letter-spacing: 2px; margin-bottom: 0; }
+p { font-size: 1.2rem; opacity: 0.8; }
+.japanese { font-family: "Meiryo", "MS PGothic", sans-serif; display: block; margin-top: 10px;}
