@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-/* The large "Sumimasen" behind the character */
+/* The large "Sumimasen" behind character */
 #background-text {
     position: absolute;
     top: 50%;
@@ -15,7 +15,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 15vw; /* Responsive size */
     font-weight: 900;
-    color: rgba(255, 255, 255, 0.03); /* Very subtle grey */
+    color: rgba(255, 255, 255, 0.03); /* dark grey */
     white-space: nowrap;
     z-index: 0; /* Behind everything */
     user-select: none;
